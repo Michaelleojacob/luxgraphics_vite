@@ -3,9 +3,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <NavLink to="/">home</NavLink>
-      <NavLink to="/">home</NavLink>
-      <NavLink to="/">home</NavLink>
+      <ul>
+        <li>
+          <NavLink to="/">home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/test">test</NavLink>
+        </li>
+      </ul>
     </div>
   );
 };
