@@ -9,6 +9,8 @@ import Newsletter from "./components/newsletter/newsletter";
 import Socials from "./components/socials/socials";
 import Originals from "./components/originals/originals";
 import Events from "./components/events/events";
+import Killers from "./components/series/killers";
+import Others from "./components/series/other";
 
 const AppRoutes = () => {
   return (
@@ -16,7 +18,10 @@ const AppRoutes = () => {
       <Route path="/" element={<LandingPage />}></Route>
       <Route path="/test" element={<TestComp />}></Route>
       <Route path="/prints" element={<Prints />}></Route>
-      <Route path="/series" element={<Series />}></Route>
+      <Route path="/series" element={<Series />}>
+        <Route path="/series/killers" element={<Killers />} />
+        <Route path="/series/others" element={<Others />} />
+      </Route>
       <Route path="/originals" element={<Originals />}></Route>
       <Route path="/cart" element={<Cart />}></Route>
       <Route path="/about" element={<About />}></Route>
