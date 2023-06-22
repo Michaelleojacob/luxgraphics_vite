@@ -12,7 +12,7 @@ const NavBarMediaQueryHandler = () => {
     })
   );
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between bg-yellow-500 p-4 align-center sticky top-0 right-0 z-20">
       <NavLink to="/">
         <Logo />
       </NavLink>
